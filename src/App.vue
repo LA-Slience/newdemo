@@ -2,27 +2,31 @@
   <div id="app">
     <img src="./assets/logo.png">
     <button @click="handleclick"></button>
+    <button>按键1</button>
+    <button>按键1</button>
+    <button>按键1</button>
+
     <router-view/>
   </div>
 </template>
 
 <script>
-import router from './router'
+import router from "./router";
 export default {
-  name: 'App',
+  name: "App",
   // router,
-  methods:{
-    handleclick:function(){
-      this.$router.push({name:'fo',params:{id:123}})
+  methods: {
+    handleclick: function() {
+      this.$router.push({ name: "fo", params: { id: 123 } });
       // console.log($route)
     }
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
